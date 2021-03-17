@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lists</title>
+        <style>
+            ul.B1   {
+                list-style-type:none;
+                padding:0px;
+                margin:0px;
+                overflow: hidden;
+                background-color:#333333
+            }
+            li.C1   {
+                float:left;
+            }
+            a.A1    {
+                color:white;
+                text-decoration:none;
+                display:block;
+                padding:20px;
+                text-align:center;
+            }
+            .A1:hover   {
+                background-color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <!--unordered list-->
+        <ul style='list-style-type:square;'>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e
+                <ul style='list-style-type:disc;'>
+                    <li>x</li>
+                    <li>y</li>
+                    <li>z</li>
+                </ul>
+            </li>
+            <li>f
+                <ul style='list-style-type:circle;'>
+                    <li>p</li>
+                    <li>q</li>
+                    <li>r</li>
+                    <li>s</li>
+                </ul>
+            </li>
+            <li>g
+                <ul style='list-style-type:none;'>
+                    <li>l</li>
+                    <li>m</li>
+                    <li>n</li>
+                </ul>
+            </li>
+            <li>h</li>
+        </ul>
+        <hr>
+        <!--ordered list-->
+        <ol>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+        </ol>
+        <hr>
+        <!--descriotion kist-->
+        <dl>
+            <dt>a</dt>
+                <dd>- 1</dd>
+                <dd>- 2</dd>
+                <dd>- 3</dd>
+            <dt>root</dt>
+                <dd>- square root</dd>
+                <dd>- cubic root</dd>
+            <dt>exponent</dt>
+                <dd>- squared</dd>
+                <dd>- cube</dd>
+        </dl>
+        <hr>
+        <!--creating menues with horizontal lists-->
+        <ul class='B1'>
+            <li class='C1'><a class='A1' onclick="home()">HOME</a></li>
+            <li class='C1'><a class='A1'onclick='news()'>NEWS</a></li>
+            <li class='C1'><a class='A1'onclick='contact()'>CONTACT US</a></li>
+            <li class='C1'><a class='A1'onclick='about()'>ABOUT</a></li>
+        </ul>
+        <script>
+            function home(){
+                alert("home");
+            }
+            function news(){
+                alert("news");
+            }
+            function contact(){
+                alert("contact us");
+            }
+            function about(){
+                alert("about");
+                }
+        </script>
+    </body>
+</html>

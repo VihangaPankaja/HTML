@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image</title>
+        <style>
+            body    {
+                background-image: URL('pexels-henry-&-co-1939485.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+                }
+        </style>
+    </head>
+    <body>
+        <img src='iconfinder___electronics_computer_device_technology_3668859.png' alt='image' title='image' style='width:150px; height:150px;'><br>
+        <img src='twitter-gif.gif' alt='gif' title='gif' style="width:auto; height:150px;"><br>
+        <img src='android.svg' alt='svg' title='vector' style='width:150px; height:150px;'><br>
+        <img src='elephant.apng' alt='apng' title='animated png- apng' style='width:150px; height:150px;'><br>
+
+        <p><img src="android.svg" alt="Smiley face" style="float:right; width:42px; height:42px;">
+            The image will float to the right of the text.</p>
+            
+        <p><img src="android.svg" alt="Smiley face" style="float:left; width:42px; height:42px;">
+            The image will float to the left of the text.</p>
+        <h5 style='font-size:32px; text-align:center;'>mapped clickable image</h5>
+
+        <p style='text-align:center;'><img src='workplace.jpg' alt='clickable img' style='width:auto; height:379px;' usemap='#image-map1'>
+            <img src='frenchfood.jpg' alt='clickable img' style="height:675px; width:auto;" usemap="#image-map2"></p>
+        
+        <map name="image-map1">
+            <area alt="laptop title="laptop" onclick='laptop()' coords="34,39,273,41,265,188,273,349,33,345,44,186" shape="poly">
+            <area alt="cup" title="cup" onClick='cup()' coords="338,298,44" shape="circle">
+            <area alt="phone" title="phone" onClick='phone()' coords="290,172,336,246" shape="rect">
+            <area alt="paper" title="paper" onClick='paper()' coords="0,207,31,219,-1,290" shape="poly">
+            <area onClick='table()' shape="default">
+        </map>
+        <map name="image-map2">
+            <area title='croissant' alt='croissant' href='croissant.html' coords="46,344,59,353,71,350,79,356,102,353,118,339,135,332,148,316,156,302,169,298,176,275,190,270,202,239,205,217,203,198,201,190,202,160,192,143,188,133,181,118,150,119,135,126,131,143,115,153,100,161,96,178,88,190,61,211,39,255,43,263,36,287,42,307,37,320" shape="poly">
+            <area shape="default" onClick='hmm()'>
+        </map>
+        <script>
+            function laptop(){
+                alert("It's a laptop");
+            }
+            function cup(){
+                alert("It's a cup");
+            }
+            function phone(){
+                alert("It's a phone");
+            }
+            function table(){
+                alert("It's a Tabel");
+            }
+            function paper(){
+                alert("It's a paper");
+            }
+            function hmm(){
+                alert("hmm");
+            }
+        </script>
+
+        <!--picture element allows to load different images according to page dimentions -->
+        <picture>
+            <source media="(min-width:1600px)" srcset="img_food.jpg">
+            <source media="(min-width:1300px)" srcset="img_car.jpg">
+            <img src="img_girl.jpg">
+        </picture>
+    </body>
+</html>

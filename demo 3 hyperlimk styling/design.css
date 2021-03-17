@@ -1,0 +1,18 @@
+a:link{
+    color:mediumseagreen;
+    background-color:gray;
+    padding:15px 20px;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:visited{
+    color:aquamarine;
+    background-color:gray;
+}
+
+a:active, a:hover{
+    color:darkolivegreen;
+    background-color:black;
+}
