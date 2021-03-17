@@ -3,51 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script>MathJax = {loader: {load: ['input/asciimath', 'output/chtml']}}</script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style></style>
 </head>
 <body>
-    <tabel>
-        <tr>
-            <th>headin</th>
-            <th>headin</th>
-            <th>headin</th>
-            <th>headin</th>
-            <th>headin</th>
-        </tr>
-        <tr>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-        </tr>
-        <tr>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-        </tr>
-        <tr>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-        </tr>
-        <tr>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-        </tr>
-        <tr>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-            <hd>data</hd>
-        </tr>
-    </tabel>
+    table[style='width:100%;']>(tr>th{headin$}*5)+(tr>td{data$}*5)*4
+    <p style="text-align:center; font-size:28px;">`1+x+x^2/(2!)+x^3/(3!)+x^4/(4!)+........+x^n/(n!)+.....`</p>
 </body>
 </html>
