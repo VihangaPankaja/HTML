@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- scaling -->
+    <meta name='author' content='vihanga pankaja'>
+    <meta name='keywords' content='domo, html-demo'>  <!-- search engine keywords -->
     <title>Document</title>
 </head>
 <body>
@@ -16,19 +18,27 @@
         <button onClick="document.getElementById('sample').style.color = 'red'">red</button>
         <button onClick="document.getElementById('sample').style.color = 'green'">green</button>
         <button onClick="document.getElementById('sample').style.color = 'blue'">blue</button>
-    </div>
+    </div><hr>
     <div>
         <script>
+            var state = 0
             function swiching(){
-                if (document.getElementById('img1').src == "file:///D:/code%20projects/HTML/demo%2010%20simple%20js/pic_bulboff.gif"){
+                if (state == 0){
                     document.getElementById('img1').src = 'pic_bulbon.gif';
+                    state = 1;
                 }else {
                     document.getElementById('img1').src = 'pic_bulboff.gif';
+                    state = 0;
                 }
             }
         </script>
         <img src="pic_bulboff.gif" alt="off" id='img1' style='padding:20px';>
         <button onclick='swiching()'>swich</button>
+    </div><hr>
+    <div>
+        <span style="float: left; padding-top:15px;">Time: </span>
+        <span><iframe frameborder="0" src='time.html' width='500px' height='60px'>
+        </iframe></span>
     </div>
 </body>
 </html>
