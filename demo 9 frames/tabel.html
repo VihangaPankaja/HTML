@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-LK">
+    <head>
+        <title>Tabel</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                }
+            td, th {
+                padding: 10px;
+            }
+            tr:nth-child(odd) {
+                background-color:#dddddd;
+            }
+            tr:nth-child(1)   {
+                background-color:#cccccc;
+            }
+        </style>
+        <script>MathJax = {loader: {load: ['input/asciimath', 'output/chtml']}}</script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>     
+        <table style='width:100%;'>
+            <caption>Properties of objects</caption>
+            <tr>
+                <th></th>
+                <th>Cube</th>
+                <th>Cylinder</th>
+                <th>Cone</th>
+                <th>Pyramid(square based)</th>
+                <th>Sphere</th>
+            </tr>
+            <tr>
+                <th style='text-align:left;'>Surface Area</td>
+                <td>`6a^2`</td>
+                <td>`2&#x3C0;r^2 + 2&#x3C0;rh`</td>
+                <td>`&#x3C0;r^2 + &#x3C0;rl`</td>
+                <td>`a^2 + asqrt(a^2 + (2h)^2)`</td>
+                <td>`4&#x3C0;r^2`</td>
+            </tr>
+            <tr>
+                <th style='text-align:left;'>Volume</th>
+                <td>`a^3`</td>
+                <td>`&#x3C0;r^2h`</td>
+                <td>`1/3&#x3C0;r^2h`</td>
+                <td>`1/3a^2h`</td>
+                <td>`4/3&#x3C0;r^3`</td>
+            </tr>
+        </table>
+    </body>
+</html>
