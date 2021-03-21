@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="document.getElementById('para').innerHTML = 'clicked'">click me</button>
+        <p id='para'></p>
+    </div>
+    <p id="sample">Sample Text</p>
+    <div>
+        <button onClick="document.getElementById('sample').style.color = 'red'">red</button>
+        <button onClick="document.getElementById('sample').style.color = 'green'">green</button>
+        <button onClick="document.getElementById('sample').style.color = 'blue'">blue</button>
+    </div>
+    <div>
+        <script>
+            function swiching(){
+                if (document.getElementById('img1').src == "file:///D:/code%20projects/HTML/demo%2010%20simple%20js/pic_bulboff.gif"){
+                    document.getElementById('img1').src = 'pic_bulbon.gif';
+                }else {
+                    document.getElementById('img1').src = 'pic_bulboff.gif';
+                }
+            }
+        </script>
+        <img src="pic_bulboff.gif" alt="off" id='img1' style='padding:20px';>
+        <button onclick='swiching()'>swich</button>
+    </div>
+</body>
+</html>
